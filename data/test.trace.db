@@ -1,0 +1,1688 @@
+2024-06-21 16:03:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parametro "#7" no está fijado
+Parameter "#7" is not set; SQL statement:
+UPDATE entrenadores SET nombre = ? , direccion = ?, edad = ?, fechaNacimiento = ?, genero = ?, nacionalidad = ? WHERE id = ? [90012-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at org.example.DAO.EntrenadorDAOImpl.actualiarEntrenador(EntrenadorDAOImpl.java:90)
+	at org.example.Logica.Main.main(Main.java:16)
+2024-06-21 16:25:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parametro "#7" no está fijado
+Parameter "#7" is not set; SQL statement:
+UPDATE entrenadores SET nombre = ? , direccion = ?, edad = ?, fechaNacimiento = ?, genero = ?, nacionalidad = ? WHERE id = ? [90012-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at org.example.DAO.EntrenadorDAOImpl.actualiarEntrenador(EntrenadorDAOImpl.java:95)
+	at org.example.Logica.Main.main(Main.java:16)
+2024-06-21 16:31:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parametro "#7" no está fijado
+Parameter "#7" is not set; SQL statement:
+UPDATE entrenadores SET nombre = ? , direccion = ?, edad = ?, fechaNacimiento = ?, genero = ?, nacionalidad = ? WHERE id = ? [90012-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at org.example.DAO.EntrenadorDAOImpl.actualiarEntrenador(EntrenadorDAOImpl.java:91)
+	at org.example.Logica.Main.main(Main.java:16)
+2024-06-21 16:32:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Imposible interpretar la constante "DATE" "Sat Mar 17 00:00:00 ART 2001"
+Cannot parse "DATE" constant "Sat Mar 17 00:00:00 ART 2001"; SQL statement:
+UPDATE entrenadores SET nombre = ? , direccion = ?, edad = ?, fechaNacimiento = ?, genero = ?, nacionalidad = ? WHERE id = ? [22007-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueDate.parse(ValueDate.java:53)
+	at org.h2.value.Value.convertToDate(Value.java:1854)
+	at org.h2.value.Value.convertTo(Value.java:1147)
+	at org.h2.value.Value.convertForAssignTo(Value.java:1092)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:369)
+	at org.h2.table.Table.convertUpdateRow(Table.java:968)
+	at org.h2.command.dml.SetClauseList.prepareUpdate(SetClauseList.java:140)
+	at org.h2.command.dml.Update.update(Update.java:88)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at org.example.DAO.EntrenadorDAOImpl.actualiarEntrenador(EntrenadorDAOImpl.java:96)
+	at org.example.Logica.Main.main(Main.java:16)
+Caused by: java.lang.NumberFormatException: For input string: "Sat Mar 17 00:00:00 ART "
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:190)
+	at org.h2.value.ValueDate.parse(ValueDate.java:51)
+	... 14 more
+2024-07-12 18:01:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:32)
+	at org.example.Logica.Main.main(Main.java:25)
+2024-07-12 18:01:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:32)
+	at org.example.Logica.Main.main(Main.java:27)
+2024-07-12 18:01:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:32)
+	at org.example.Logica.Main.main(Main.java:29)
+2024-07-12 18:01:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:32)
+	at org.example.Logica.Main.main(Main.java:31)
+2024-07-12 18:01:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:32)
+	at org.example.Logica.Main.main(Main.java:33)
+2024-07-12 18:01:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:32)
+	at org.example.Logica.Main.main(Main.java:35)
+2024-07-12 18:08:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+UPDATE pokemonesss SET entrenador_id = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:116)
+	at org.example.Logica.Main.main(Main.java:38)
+2024-07-12 18:08:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+UPDATE pokemonesss SET entrenador_id = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:116)
+	at org.example.Logica.Main.main(Main.java:40)
+2024-07-12 18:08:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+UPDATE pokemonesss SET entrenador_id = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:116)
+	at org.example.Logica.Main.main(Main.java:42)
+2024-07-12 18:08:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+UPDATE pokemonesss SET entrenador_id = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:116)
+	at org.example.Logica.Main.main(Main.java:44)
+2024-07-12 18:08:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+UPDATE pokemonesss SET entrenador_id = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:116)
+	at org.example.Logica.Main.main(Main.java:46)
+2024-07-12 18:08:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+UPDATE pokemonesss SET entrenador_id = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:116)
+	at org.example.Logica.Main.main(Main.java:48)
+2024-07-31 22:10:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS [*]1(id INT AUTO_INCREMENT PRIMARY KEY, especie VARCHAR(255), tipo VARCHAR(255), energia DOUBLE, poder DOUBLE, id_entrenador INT)"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]1(id INT AUTO_INCREMENT PRIMARY KEY, especie VARCHAR(255), tipo VARCHAR(255), energia DOUBLE, poder DOUBLE, id_entrenador INT)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 1(id INT AUTO_INCREMENT PRIMARY KEY, especie VARCHAR(255), tipo VARCHAR(255), energia DOUBLE, poder DOUBLE, id_entrenador INT) [42001-214]
+2024-07-31 22:10:34 jdbc[6]: null
+org.h2.message.DbException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:190)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:132)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:31)
+	at org.example.Logica.Main.main(Main.java:39)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 10 more
+2024-07-31 22:10:34 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; se esperaba "identifier"
+Syntax error in SQL statement "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; expected "identifier"; SQL statement:
+INSERT INTO 1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42001-214]
+2024-07-31 22:10:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; se esperaba "identifier"
+Syntax error in SQL statement "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; expected "identifier"; SQL statement:
+INSERT INTO 1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42001-214]
+2024-07-31 22:10:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; se esperaba "identifier"
+Syntax error in SQL statement "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; expected "identifier"; SQL statement:
+INSERT INTO 1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42001-214]
+2024-07-31 22:10:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; se esperaba "identifier"
+Syntax error in SQL statement "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; expected "identifier"; SQL statement:
+INSERT INTO 1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42001-214]
+2024-07-31 22:10:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; se esperaba "identifier"
+Syntax error in SQL statement "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; expected "identifier"; SQL statement:
+INSERT INTO 1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42001-214]
+2024-07-31 22:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; se esperaba "identifier"
+Syntax error in SQL statement "INSERT INTO [*]1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?)"; expected "identifier"; SQL statement:
+INSERT INTO 1 (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42001-214]
+2024-07-31 22:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; se esperaba "identifier"
+Syntax error in SQL statement "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; expected "identifier"; SQL statement:
+UPDATE 1 SET id_entrenador = ? WHERE id = ? AND energia = 0 [42001-214]
+2024-07-31 22:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; se esperaba "identifier"
+Syntax error in SQL statement "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; expected "identifier"; SQL statement:
+UPDATE 1 SET id_entrenador = ? WHERE id = ? AND energia = 0 [42001-214]
+2024-07-31 22:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; se esperaba "identifier"
+Syntax error in SQL statement "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; expected "identifier"; SQL statement:
+UPDATE 1 SET id_entrenador = ? WHERE id = ? AND energia = 0 [42001-214]
+2024-07-31 22:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; se esperaba "identifier"
+Syntax error in SQL statement "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; expected "identifier"; SQL statement:
+UPDATE 1 SET id_entrenador = ? WHERE id = ? AND energia = 0 [42001-214]
+2024-07-31 22:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; se esperaba "identifier"
+Syntax error in SQL statement "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; expected "identifier"; SQL statement:
+UPDATE 1 SET id_entrenador = ? WHERE id = ? AND energia = 0 [42001-214]
+2024-07-31 22:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; se esperaba "identifier"
+Syntax error in SQL statement "UPDATE [*]1 SET id_entrenador = ? WHERE id = ? AND energia = 0"; expected "identifier"; SQL statement:
+UPDATE 1 SET id_entrenador = ? WHERE id = ? AND energia = 0 [42001-214]
+2024-07-31 22:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM [*]1 WHERE id = ?"; se esperaba "identifier"
+Syntax error in SQL statement "SELECT * FROM [*]1 WHERE id = ?"; expected "identifier"; SQL statement:
+SELECT * FROM 1 WHERE id = ? [42001-214]
+2024-07-31 22:10:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "UPDATE [*]1 SET especie = ? , tipo = ?, energia = ?, poder = ?, id_entrenador = ? WHERE id = ?"; se esperaba "identifier"
+Syntax error in SQL statement "UPDATE [*]1 SET especie = ? , tipo = ?, energia = ?, poder = ?, id_entrenador = ? WHERE id = ?"; expected "identifier"; SQL statement:
+UPDATE 1 SET especie = ? , tipo = ?, energia = ?, poder = ?, id_entrenador = ? WHERE id = ? [42001-214]
+2024-07-31 22:10:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "DELETE FROM [*]1 WHERE id = ?"; se esperaba "identifier"
+Syntax error in SQL statement "DELETE FROM [*]1 WHERE id = ?"; expected "identifier"; SQL statement:
+DELETE FROM 1 WHERE id = ? [42001-214]
+2024-07-31 22:12:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ESPECIE" no encontrada
+Column "ESPECIE" not found; SQL statement:
+INSERT INTO pepito (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:39)
+2024-07-31 22:12:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ESPECIE" no encontrada
+Column "ESPECIE" not found; SQL statement:
+INSERT INTO pepito (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:41)
+2024-07-31 22:12:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ESPECIE" no encontrada
+Column "ESPECIE" not found; SQL statement:
+INSERT INTO pepito (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:43)
+2024-07-31 22:12:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ESPECIE" no encontrada
+Column "ESPECIE" not found; SQL statement:
+INSERT INTO pepito (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:45)
+2024-07-31 22:12:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ESPECIE" no encontrada
+Column "ESPECIE" not found; SQL statement:
+INSERT INTO pepito (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:47)
+2024-07-31 22:12:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ESPECIE" no encontrada
+Column "ESPECIE" not found; SQL statement:
+INSERT INTO pepito (especie, tipo, energia, poder, id_entrenador) VALUES (?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:49)
+2024-07-31 22:12:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pepito SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:133)
+	at org.example.Logica.Main.main(Main.java:52)
+2024-07-31 22:12:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pepito SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:133)
+	at org.example.Logica.Main.main(Main.java:54)
+2024-07-31 22:12:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pepito SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:133)
+	at org.example.Logica.Main.main(Main.java:56)
+2024-07-31 22:12:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pepito SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:133)
+	at org.example.Logica.Main.main(Main.java:58)
+2024-07-31 22:12:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pepito SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:133)
+	at org.example.Logica.Main.main(Main.java:60)
+2024-07-31 22:12:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pepito SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:133)
+	at org.example.Logica.Main.main(Main.java:62)
+2024-07-31 22:12:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "especie" no encontrada
+Column "especie" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at org.example.DAO.PokemonDAOImpl.devolverPokemonPorID(PokemonDAOImpl.java:62)
+	at org.example.Logica.Main.main(Main.java:75)
+2024-07-31 22:12:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ESPECIE" no encontrada
+Column "ESPECIE" not found; SQL statement:
+UPDATE pepito SET especie = ? , tipo = ?, energia = ?, poder = ?, id_entrenador = ? WHERE id = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.actualiarPokemon(PokemonDAOImpl.java:100)
+	at org.example.Logica.Main.main(Main.java:76)
+2024-08-01 18:43:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "costoDePoder" no encontrada
+Column "costoDePoder" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getFloat(JdbcResultSet.java:794)
+	at org.example.DAO.PokemonDAOImpl.devolverPokemonPorID(PokemonDAOImpl.java:92)
+	at org.example.Logica.Main.main(Main.java:75)
+2024-08-01 19:56:41 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+SELECT * FROM pokemones WHERE entrenador_id = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:139)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:79)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarseA(EntrenadorDAOImpl.java:165)
+	at org.example.Logica.Main.main(Main.java:71)
+2024-08-01 19:56:41 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+SELECT * FROM pokemones WHERE entrenador_id = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:139)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:79)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarseA(EntrenadorDAOImpl.java:166)
+	at org.example.Logica.Main.main(Main.java:71)
+2024-08-01 19:56:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+SELECT * FROM pokemones WHERE entrenador_id = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:139)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:79)
+	at org.example.Logica.Main.main(Main.java:75)
+2024-08-01 20:01:20 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+SELECT * FROM pokemones WHERE id_entrenador = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:139)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:79)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarseA(EntrenadorDAOImpl.java:165)
+	at org.example.Logica.Main.main(Main.java:71)
+2024-08-01 20:01:20 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+SELECT * FROM pokemones WHERE id_entrenador = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:139)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:79)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarseA(EntrenadorDAOImpl.java:166)
+	at org.example.Logica.Main.main(Main.java:71)
+2024-08-01 20:01:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+SELECT * FROM pokemones WHERE id_entrenador = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:139)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:79)
+	at org.example.Logica.Main.main(Main.java:75)
+2024-08-01 20:04:06 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "nombrePoder" no encontrada
+Column "nombrePoder" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:106)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarseA(EntrenadorDAOImpl.java:165)
+	at org.example.Logica.Main.main(Main.java:71)
+2024-08-01 20:04:06 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "nombrePoder" no encontrada
+Column "nombrePoder" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:106)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarseA(EntrenadorDAOImpl.java:166)
+	at org.example.Logica.Main.main(Main.java:71)
+2024-08-01 20:04:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "nombrePoder" no encontrada
+Column "nombrePoder" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:106)
+	at org.example.Logica.Main.main(Main.java:75)
+2024-08-01 20:07:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL " DROP TABLE entrenadoresCREATE [*]TABLE IF NOT EXISTS entrenadores(id INT AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(255), direccion VARCHAR(255), edad INT, fechaNacimiento DATE, genero VARCHAR(255), nacionalidad VARCHAR(255), enfrentamientoGanados VARCHAR(255))"
+Syntax error in SQL statement " DROP TABLE entrenadoresCREATE [*]TABLE IF NOT EXISTS entrenadores(id INT AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(255), direccion VARCHAR(255), edad INT, fechaNacimiento DATE, genero VARCHAR(255), nacionalidad VARCHAR(255), enfrentamientoGanados VARCHAR(255))"; SQL statement:
+ DROP TABLE entrenadoresCREATE TABLE IF NOT EXISTS entrenadores(id INT AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(255), direccion VARCHAR(255), edad INT, fechaNacimiento DATE, genero VARCHAR(255), nacionalidad VARCHAR(255), enfrentamientoGanados VARCHAR(255)) [42000-214]
+2024-08-01 20:07:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL " DROP TABLE pokemonesCREATE [*]TABLE IF NOT EXISTS pokemones(id INT AUTO_INCREMENT PRIMARY KEY, especie VARCHAR(255), tipo VARCHAR(255), energia DOUBLE, poderTotal DOUBLE, nombrePoder VARCHAR(255), daño DOUBLE, costoPoder DOUBLE ,id_entrenador INT)"
+Syntax error in SQL statement " DROP TABLE pokemonesCREATE [*]TABLE IF NOT EXISTS pokemones(id INT AUTO_INCREMENT PRIMARY KEY, especie VARCHAR(255), tipo VARCHAR(255), energia DOUBLE, poderTotal DOUBLE, nombrePoder VARCHAR(255), daño DOUBLE, costoPoder DOUBLE ,id_entrenador INT)"; SQL statement:
+ DROP TABLE pokemonesCREATE TABLE IF NOT EXISTS pokemones(id INT AUTO_INCREMENT PRIMARY KEY, especie VARCHAR(255), tipo VARCHAR(255), energia DOUBLE, poderTotal DOUBLE, nombrePoder VARCHAR(255), daño DOUBLE, costoPoder DOUBLE ,id_entrenador INT) [42000-214]
+2024-08-01 20:07:58 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:39)
+2024-08-01 20:07:58 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:41)
+2024-08-01 20:07:58 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:43)
+2024-08-01 20:07:58 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:45)
+2024-08-01 20:07:58 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:47)
+2024-08-01 20:07:58 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:49)
+2024-08-01 20:07:58 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:52)
+2024-08-01 20:07:58 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:54)
+2024-08-01 20:07:58 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:56)
+2024-08-01 20:07:58 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:58)
+2024-08-01 20:07:58 jdbc[17]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:60)
+2024-08-01 20:07:58 jdbc[18]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:62)
+2024-08-01 20:09:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL " DROP TABLE entrenadores[*]-CREATE TABLE IF NOT EXISTS entrenadores(id INT AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(255), direccion VARCHAR(255), edad INT, fechaNacimiento DATE, genero VARCHAR(255), nacionalidad VARCHAR(255), enfrentamientoGanados VARCHAR(255))"
+Syntax error in SQL statement " DROP TABLE entrenadores[*]-CREATE TABLE IF NOT EXISTS entrenadores(id INT AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(255), direccion VARCHAR(255), edad INT, fechaNacimiento DATE, genero VARCHAR(255), nacionalidad VARCHAR(255), enfrentamientoGanados VARCHAR(255))"; SQL statement:
+ DROP TABLE entrenadores-CREATE TABLE IF NOT EXISTS entrenadores(id INT AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(255), direccion VARCHAR(255), edad INT, fechaNacimiento DATE, genero VARCHAR(255), nacionalidad VARCHAR(255), enfrentamientoGanados VARCHAR(255)) [42000-214]
+2024-08-01 20:09:56 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL " DROP TABLE pokemones[*]-CREATE TABLE IF NOT EXISTS pokemones(id INT AUTO_INCREMENT PRIMARY KEY, especie VARCHAR(255), tipo VARCHAR(255), energia DOUBLE, poderTotal DOUBLE, nombrePoder VARCHAR(255), daño DOUBLE, costoPoder DOUBLE ,id_entrenador INT)"
+Syntax error in SQL statement " DROP TABLE pokemones[*]-CREATE TABLE IF NOT EXISTS pokemones(id INT AUTO_INCREMENT PRIMARY KEY, especie VARCHAR(255), tipo VARCHAR(255), energia DOUBLE, poderTotal DOUBLE, nombrePoder VARCHAR(255), daño DOUBLE, costoPoder DOUBLE ,id_entrenador INT)"; SQL statement:
+ DROP TABLE pokemones-CREATE TABLE IF NOT EXISTS pokemones(id INT AUTO_INCREMENT PRIMARY KEY, especie VARCHAR(255), tipo VARCHAR(255), energia DOUBLE, poderTotal DOUBLE, nombrePoder VARCHAR(255), daño DOUBLE, costoPoder DOUBLE ,id_entrenador INT) [42000-214]
+2024-08-01 20:09:56 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:39)
+2024-08-01 20:09:56 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:41)
+2024-08-01 20:09:56 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:43)
+2024-08-01 20:09:56 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:45)
+2024-08-01 20:09:56 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:47)
+2024-08-01 20:09:56 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODERTOTAL" no encontrada
+Column "PODERTOTAL" not found; SQL statement:
+INSERT INTO pokemones (especie, tipo, energia, poderTotal, nombrePoder, daño, costoPoder, id_entrenador) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at org.example.DAO.PokemonDAOImpl.aniadirPokemon(PokemonDAOImpl.java:33)
+	at org.example.Logica.Main.main(Main.java:49)
+2024-08-01 20:09:56 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:52)
+2024-08-01 20:09:56 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:54)
+2024-08-01 20:09:56 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:56)
+2024-08-01 20:09:56 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:58)
+2024-08-01 20:09:56 jdbc[17]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:60)
+2024-08-01 20:09:56 jdbc[18]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID_ENTRENADOR" no encontrada
+Column "ID_ENTRENADOR" not found; SQL statement:
+UPDATE pokemones SET id_entrenador = ? WHERE id = ? AND energia = 0 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.PokemonDAOImpl.capturarPokemon(PokemonDAOImpl.java:150)
+	at org.example.Logica.Main.main(Main.java:62)
+2024-08-01 21:32:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODER" no encontrada
+Column "PODER" not found; SQL statement:
+UPDATE pokemones SET especie = ?, tipo = ?, energia = ?, poder = ?, nombrePoder = ?, daño = ?, costoDePoder = ? WHERE id = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.EntrenadorDAOImpl.actualiarEntrenador(EntrenadorDAOImpl.java:143)
+	at org.example.Logica.Main.main(Main.java:80)
+2024-08-01 21:32:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PODER" no encontrada
+Column "PODER" not found; SQL statement:
+UPDATE pokemones SET especie = ?, tipo = ?, energia = ?, poder = ?, nombrePoder = ?, daño = ?, costoDePoder = ? WHERE id = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.EntrenadorDAOImpl.actualiarEntrenador(EntrenadorDAOImpl.java:143)
+	at org.example.Logica.Main.main(Main.java:81)
+2024-08-02 01:09:10 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+SELECT * FROM pokemones WHERE entrenador_id = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:139)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:81)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarse(EntrenadorDAOImpl.java:185)
+	at org.example.Logica.Main.main(Main.java:79)
+2024-08-02 01:09:10 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+SELECT * FROM pokemones WHERE entrenador_id = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:139)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:81)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarse(EntrenadorDAOImpl.java:186)
+	at org.example.Logica.Main.main(Main.java:79)
+2024-08-02 01:09:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ENTRENADOR_ID" no encontrada
+Column "ENTRENADOR_ID" not found; SQL statement:
+SELECT * FROM pokemones WHERE entrenador_id = ? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:139)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:81)
+	at org.example.Logica.Main.main(Main.java:83)
+2024-08-02 01:09:51 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "poder" no encontrada
+Column "poder" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getFloat(JdbcResultSet.java:794)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:107)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarse(EntrenadorDAOImpl.java:185)
+	at org.example.Logica.Main.main(Main.java:79)
+2024-08-02 01:09:51 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "poder" no encontrada
+Column "poder" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getFloat(JdbcResultSet.java:794)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:107)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarse(EntrenadorDAOImpl.java:186)
+	at org.example.Logica.Main.main(Main.java:79)
+2024-08-02 01:09:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "poder" no encontrada
+Column "poder" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getFloat(JdbcResultSet.java:794)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:107)
+	at org.example.Logica.Main.main(Main.java:83)
+2024-08-02 01:10:15 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "costoDePoder" no encontrada
+Column "costoDePoder" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getFloat(JdbcResultSet.java:794)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:111)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarse(EntrenadorDAOImpl.java:185)
+	at org.example.Logica.Main.main(Main.java:79)
+2024-08-02 01:10:15 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "costoDePoder" no encontrada
+Column "costoDePoder" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getFloat(JdbcResultSet.java:794)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:111)
+	at org.example.DAO.EntrenadorDAOImpl.enfrentarse(EntrenadorDAOImpl.java:186)
+	at org.example.Logica.Main.main(Main.java:79)
+2024-08-02 01:10:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "costoDePoder" no encontrada
+Column "costoDePoder" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getFloat(JdbcResultSet.java:794)
+	at org.example.DAO.EntrenadorDAOImpl.devolverEntrenadorPorID(EntrenadorDAOImpl.java:111)
+	at org.example.Logica.Main.main(Main.java:83)
